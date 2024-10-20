@@ -1,1 +1,1 @@
-# GeoGuezzer
+# GuessGame

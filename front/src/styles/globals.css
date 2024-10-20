@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './typography.variables.css';
+
+@layer base {
+    :root {
+        --background: 65, 22, 138; /* rgb(65, 22, 138) */
+        --foreground: 255, 255, 255; /* rgb(255, 255, 255) */
+
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+
+        --primary: 20, 20, 20;
+        --primary-foreground: 210 40% 98%;
+
+        --secondary: 255, 255, 255;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 214.3 31.8% 91.4%;
+
+        --input: 214.3 31.8% 91.4%;
+
+        --ring: 222.2 84% 4.9%;
+
+        --divider: 37, 37, 37;
+
+        --neutral: 155, 155, 155;
+
+        --radius: 0.5rem;
+
+        /* GuezGame's colors */
+        /* --purple: 65, 22, 138; rgb(65, 22, 138) */
+        /* --gray-light: 155, 155, 155 rgb(155, 155, 155; */
+        /* --gray-lighter: 70, 70, 70 rgb(70, 70, 70); */
+        /* --gray-medium: 51, 51, 51 rgb(51, 51, 51); */
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background bg-global-gradient text-foreground;
+    }
+    h1 {
+        @apply title-large text-white;
+    }
+
+    h2 {
+        @apply title-medium;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply title-small;
+    }
+
+    p {
+        @apply paragraph;
+    }
+
+    a {
+        @apply link;
+    }
+
+    label {
+        @apply paragraph-large;
+    }
+}
